@@ -1,0 +1,26 @@
+.navar{
+    display: flex;
+    justify-content: baseline;
+}
+
+.divContent{
+    display: flex;
+    justify-content: center;
+}
+
+.eliminar-productos{
+    cursor: pointer;
+}
+
+.modal-boton{
+    cursor: pointer;
+}
+.verCarrito{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.modalContent{
+    background: black;
+    color: rgb(255, 255, 255);
+}
