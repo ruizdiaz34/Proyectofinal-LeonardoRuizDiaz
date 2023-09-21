@@ -1,26 +1,163 @@
-.navar{
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-contenedor{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.navbar{
     display: flex;
-    justify-content: baseline;
+    justify-content: space-between;
+    height: 12vh;
+    background: rgb(108, 185, 54);
 }
-
-.divContent{
-    display: flex;
-    justify-content: center;
-}
-
-.eliminar-productos{
-    cursor: pointer;
-}
-
-.modal-boton{
+.nav-logo{
+    justify-self: start;
+    margin-left: 1.25rem;
+    color: rgb(255, 255, 255);
+    margin-top: 4vh;
     cursor: pointer;
 }
 .verCarrito{
-    display: flex;
-    justify-content: flex-end;
+    font-size: 1.5625rem;
+    margin-right: 1.25rem;
+    margin-top:3.5vh;
     cursor: pointer;
 }
-.modalContent{
-    background: black;
+.banner-contenedor{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: url(../assets/img/vegetales.jpg);
+}
+.banner{
+    text-align: center;
+    padding: 15% 0;
+}
+.banner h2{
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.2);
+    font-size: 3.875rem;
+    font-weight: bold;
+}
+.banner p{
+    font-size: 1.875rem;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.2);
+}
+.divContent{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1.875rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.divCars{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    max-width: 18.75rem;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.divCars img{
+    width: 90%;
+    height: 15.625rem;
+}
+.precio-carrito{
+    color: grey;
+    font-size: 1.375rem;
+
+}
+.comprar{
+    border: none;
+    outline: 0;
+    padding: .75rem;
+    color: white;
+    background: rgb(123, 208, 62);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.125rem;
+}
+.comprar:hover{
+    opacity: 0.7;
+}
+.modalContent{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 80vh;
+    color: white;
+    background-color: rgb(123, 208, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.modalContent::-webkit-scrollbar{
+    display: none;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(123, 208, 62);
+    color: white;
+    width: 100%;
+}
+.h2-modal{
+    justify-self: start;
+}
+.modal-boton{
+    cursor: pointer;
+}
+.carrito-conten{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: .625rem;
+}
+.carrito-conten img{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+.total-productos{
+    font-size: 1.5625rem;
+    padding: 1.25rem;
+    text-align: center;
+    padding-top: 1.25rem;
+}
+.eliminar-productos{
+    cursor: pointer;
+}
+.cantidad-carrito{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: .75rem;
+    padding: 5px;
+    top: 2.3125rem;
+    right: .875rem;
+    position: absolute;
+    display: none;
+}
+.sumar{
+    cursor: pointer;
+    font-size: 20px;
+}
+.restar{
+    cursor: pointer;
+    font-size: 20px;
 }

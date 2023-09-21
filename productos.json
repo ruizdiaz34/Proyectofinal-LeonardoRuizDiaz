@@ -1,0 +1,30 @@
+[ 
+    {
+        "id":1,
+        "nombre":"cebolla",
+        "precio": 50,
+        "img":"https://hiperlibertad.vtexassets.com/arquivos/ids/176852/CEBOLLA-x-500-g-1-17351.jpg?v=637546273212600000",
+        "cantidad": 1
+    },
+    {
+        "id":2,
+        "nombre":"calabaza",
+        "precio": 60,
+        "img":"https://www.datocms-assets.com/48508/1636769407-l-officiel-mexico-semillas-calabaza.jpg?auto=format%2Ccompress&cs=srgb",
+        "cantidad": 1
+    },
+    {
+        "id":3,
+        "nombre":"manzana",
+        "precio": 70,
+        "img":"https://media.justo.mx/products/12637-Manzana_Roja.jpg",
+        "cantidad": 1
+    },
+    {
+        "id":4,
+        "nombre":"banana",
+        "precio": 40,
+        "img": "https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bunch-of-bananas-67e91d5.jpg",
+        "cantidad": 1
+    }
+]
